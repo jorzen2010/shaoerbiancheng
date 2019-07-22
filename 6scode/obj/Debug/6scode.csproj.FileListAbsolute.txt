@@ -72,6 +72,7 @@ D:\mypro\6scode\6scode\bin\zh-Hans\Microsoft.Owin.Security.MicrosoftAccount.reso
 D:\mypro\6scode\6scode\obj\Debug\6scode.csprojResolveAssemblyReference.cache
 D:\mypro\6scode\6scode\obj\Debug\6scode.dll
 D:\mypro\6scode\6scode\obj\Debug\6scode.pdb
+D:\mypro\shaoerbiancheng\6scode\obj\Debug\6scode.csprojResolveAssemblyReference.cache
 D:\mypro\shaoerbiancheng\6scode\bin\6scode.dll.config
 D:\mypro\shaoerbiancheng\6scode\bin\6scode.dll
 D:\mypro\shaoerbiancheng\6scode\bin\6scode.pdb
@@ -93,6 +94,10 @@ D:\mypro\shaoerbiancheng\6scode\bin\Microsoft.Owin.Security.Twitter.dll
 D:\mypro\shaoerbiancheng\6scode\bin\Microsoft.Web.Infrastructure.dll
 D:\mypro\shaoerbiancheng\6scode\bin\Newtonsoft.Json.dll
 D:\mypro\shaoerbiancheng\6scode\bin\Owin.dll
+D:\mypro\shaoerbiancheng\6scode\bin\SkyCommon.dll
+D:\mypro\shaoerbiancheng\6scode\bin\SkyDal.dll
+D:\mypro\shaoerbiancheng\6scode\bin\SkyEntity.dll
+D:\mypro\shaoerbiancheng\6scode\bin\SkyService.dll
 D:\mypro\shaoerbiancheng\6scode\bin\System.Web.Helpers.dll
 D:\mypro\shaoerbiancheng\6scode\bin\System.Web.Mvc.dll
 D:\mypro\shaoerbiancheng\6scode\bin\System.Web.Optimization.dll
@@ -101,6 +106,12 @@ D:\mypro\shaoerbiancheng\6scode\bin\System.Web.WebPages.Deployment.dll
 D:\mypro\shaoerbiancheng\6scode\bin\System.Web.WebPages.dll
 D:\mypro\shaoerbiancheng\6scode\bin\System.Web.WebPages.Razor.dll
 D:\mypro\shaoerbiancheng\6scode\bin\WebGrease.dll
+D:\mypro\shaoerbiancheng\6scode\bin\Microsoft.ApplicationBlocks.Data.dll
+D:\mypro\shaoerbiancheng\6scode\bin\ChnCharInfo.dll
+D:\mypro\shaoerbiancheng\6scode\bin\SkyCommon.pdb
+D:\mypro\shaoerbiancheng\6scode\bin\SkyDal.pdb
+D:\mypro\shaoerbiancheng\6scode\bin\SkyEntity.pdb
+D:\mypro\shaoerbiancheng\6scode\bin\SkyService.pdb
 D:\mypro\shaoerbiancheng\6scode\bin\System.Web.Helpers.xml
 D:\mypro\shaoerbiancheng\6scode\bin\System.Web.Mvc.xml
 D:\mypro\shaoerbiancheng\6scode\bin\System.Web.Optimization.xml
@@ -143,6 +154,5 @@ D:\mypro\shaoerbiancheng\6scode\bin\zh-Hans\Microsoft.Owin.Security.Facebook.res
 D:\mypro\shaoerbiancheng\6scode\bin\zh-Hans\Microsoft.Owin.Security.Google.resources.dll
 D:\mypro\shaoerbiancheng\6scode\bin\zh-Hans\Microsoft.Owin.Security.Twitter.resources.dll
 D:\mypro\shaoerbiancheng\6scode\bin\zh-Hans\Microsoft.Owin.Security.MicrosoftAccount.resources.dll
-D:\mypro\shaoerbiancheng\6scode\obj\Debug\6scode.csprojResolveAssemblyReference.cache
 D:\mypro\shaoerbiancheng\6scode\obj\Debug\6scode.dll
 D:\mypro\shaoerbiancheng\6scode\obj\Debug\6scode.pdb

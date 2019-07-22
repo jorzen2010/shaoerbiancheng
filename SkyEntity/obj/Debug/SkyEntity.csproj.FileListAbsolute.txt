@@ -1,0 +1,4 @@
+D:\mypro\shaoerbiancheng\SkyEntity\bin\Debug\SkyEntity.dll
+D:\mypro\shaoerbiancheng\SkyEntity\bin\Debug\SkyEntity.pdb
+D:\mypro\shaoerbiancheng\SkyEntity\obj\Debug\SkyEntity.dll
+D:\mypro\shaoerbiancheng\SkyEntity\obj\Debug\SkyEntity.pdb

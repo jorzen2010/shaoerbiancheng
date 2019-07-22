@@ -41,12 +41,12 @@
   <ItemGroup>
     <Reference Include="Microsoft.CSharp" />
     <Reference Include="System" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
     <Reference Include="System.Data" />
     <Reference Include="System.Drawing" />
     <Reference Include="System.Web.DynamicData" />
     <Reference Include="System.Web.Entity" />
     <Reference Include="System.Web.ApplicationServices" />
-    <Reference Include="System.ComponentModel.DataAnnotations" />
     <Reference Include="System.Core" />
     <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="System.Xml.Linq" />
@@ -159,6 +159,8 @@
     <Compile Include="App_Start\RouteConfig.cs" />
     <Compile Include="App_Start\Startup.Auth.cs" />
     <Compile Include="Controllers\AccountController.cs" />
+    <Compile Include="Controllers\AdminBaseController.cs" />
+    <Compile Include="Controllers\CategoryController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
@@ -1159,6 +1161,8 @@
     <Content Include="Views\Shared\_TopPartial.cshtml" />
     <Content Include="Views\Home\CourseList.cshtml" />
     <Content Include="Views\Home\Content.cshtml" />
+    <Content Include="Views\Home\Login.cshtml" />
+    <Content Include="Views\Category\Index.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
@@ -1169,6 +1173,24 @@
     <Content Include="fonts\glyphicons-halflings-regular.eot" />
     <Content Include="packages.config" />
     <None Include="Project_Readme.html" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\SkyCommon\SkyCommon.csproj">
+      <Project>{f2175da4-e145-4d76-a1f1-4fbf5bf900f5}</Project>
+      <Name>SkyCommon</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\SkyDal\SkyDal.csproj">
+      <Project>{cfda06ff-0ff5-4f32-92dc-012cc2e4244f}</Project>
+      <Name>SkyDal</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\SkyEntity\SkyEntity.csproj">
+      <Project>{a0d6e331-8da8-4dfc-ac9a-a63756a97011}</Project>
+      <Name>SkyEntity</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\SkyService\SkyService.csproj">
+      <Project>{2fad994f-ad17-4cf7-9c33-254f31c63d7f}</Project>
+      <Name>SkyService</Name>
+    </ProjectReference>
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>

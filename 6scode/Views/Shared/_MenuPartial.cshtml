@@ -19,18 +19,18 @@
         <li><a href="@Url.Action("Index","Home")"><i class="fa fa-dashboard"></i> <span>仪表盘</span></a></li>
         <li><a href="@Url.Action("About","Home")"><i class="fa fa-table"></i> <span>课程中心</span></a></li>
         <li><a href="@Url.Action("Contact","Home")"><i class="fa fa-cog"></i> <span>个人设置</span></a></li>
-        @*<li class="treeview">
+        <li class="treeview">
             <a href="#">
-                <i class="fa fa-cog"></i> <span>个人设置</span>
+                <i class="fa fa-cog"></i> <span>系统设置</span>
                 <span class="pull-right-container">
-                    <i class="fa fa-angle-left pull-right"></i>
+                    <i class="fa fa-cog pull-right"></i>
                 </span>
             </a>
             <ul class="treeview-menu">
-                <li><a href="#">修改密码</a></li>
-                <li><a href="#">Link in level 2</a></li>
+                <li><a href="@Url.Action("Index","Category")">分类设置</a></li>
+                <li><a href="#">系统管理</a></li>
             </ul>
-        </li>*@
+        </li>
     </ul>
     <!-- /.sidebar-menu -->
 </section>

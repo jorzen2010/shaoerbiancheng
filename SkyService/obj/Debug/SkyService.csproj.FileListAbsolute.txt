@@ -1,0 +1,12 @@
+D:\mypro\shaoerbiancheng\SkyService\bin\Debug\SkyService.dll
+D:\mypro\shaoerbiancheng\SkyService\bin\Debug\SkyService.pdb
+D:\mypro\shaoerbiancheng\SkyService\obj\Debug\SkyService.dll
+D:\mypro\shaoerbiancheng\SkyService\obj\Debug\SkyService.pdb
+D:\mypro\shaoerbiancheng\SkyService\bin\Debug\SkyDal.dll
+D:\mypro\shaoerbiancheng\SkyService\bin\Debug\SkyEntity.dll
+D:\mypro\shaoerbiancheng\SkyService\bin\Debug\EntityFramework.dll
+D:\mypro\shaoerbiancheng\SkyService\bin\Debug\SkyDal.pdb
+D:\mypro\shaoerbiancheng\SkyService\bin\Debug\SkyEntity.pdb
+D:\mypro\shaoerbiancheng\SkyService\bin\Debug\EntityFramework.xml
+D:\mypro\shaoerbiancheng\SkyService\bin\Debug\zh-Hans\EntityFramework.resources.dll
+D:\mypro\shaoerbiancheng\SkyService\obj\Debug\SkyService.csprojResolveAssemblyReference.cache
