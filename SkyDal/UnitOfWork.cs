@@ -13,7 +13,35 @@ namespace SkyDal
         private SkyWebContext context = new SkyWebContext();
 
 
+        private GenericRepository<Setting> SettingsRepository;
 
+        public GenericRepository<Setting> settingsRepository
+        {
+            get
+            {
+
+                if (this.SettingsRepository == null)
+                {
+                    this.SettingsRepository = new GenericRepository<Setting>(context);
+                }
+                return SettingsRepository;
+            }
+        }
+
+        private GenericRepository<SysUser> SysUsersRepository;
+
+        public GenericRepository<SysUser> sysUsersRepository
+        {
+            get
+            {
+
+                if (this.SysUsersRepository == null)
+                {
+                    this.SysUsersRepository = new GenericRepository<SysUser>(context);
+                }
+                return SysUsersRepository;
+            }
+        }
         
          private GenericRepository<Category> CategorysRepository;
 

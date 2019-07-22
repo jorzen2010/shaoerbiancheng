@@ -15,7 +15,7 @@ namespace _6scode.Controllers
             if (Session["uname"] == null)
             {
                 //filterContext.HttpContext.Response.Redirect("/User/Login");
-                filterContext.Result = Redirect("/Home/Login");
+                filterContext.Result = Redirect("/AdminAccount/Login");
             }
             ViewBag.Title = "陪伴空间";
         }

@@ -25,7 +25,7 @@ namespace SkyDal
         }
 
         public DbSet<Category> Categorys { get; set; }
-    
-        
+        public DbSet<Setting> Settings { get; set; }
+        public DbSet<SysUser> SysUsers { get; set; }
     }
 }
