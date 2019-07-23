@@ -6,7 +6,7 @@ using System.Web.Mvc;
 
 namespace _6scode.Controllers
 {
-    public class HomeController : Controller
+    public class HomeController : AdminBaseController
     {
         public ActionResult Index()
         {

@@ -82,7 +82,7 @@ namespace _6scode.Controllers
 
                     if (string.IsNullOrEmpty(reurnUrl))
                     {
-                        return RedirectToAction("Index","AdminHome");
+                        return RedirectToAction("Index","Home");
                     }
                     else
                     {

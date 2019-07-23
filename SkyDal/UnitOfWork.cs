@@ -58,6 +58,21 @@ namespace SkyDal
              }
          }
 
+         private GenericRepository<VideoCourse> VideoCoursesRepository;
+
+         public GenericRepository<VideoCourse> videoCoursesRepository
+         {
+             get
+             {
+
+                 if (this.VideoCoursesRepository == null)
+                 {
+                     this.VideoCoursesRepository = new GenericRepository<VideoCourse>(context);
+                 }
+                 return VideoCoursesRepository;
+             }
+         }
+
         
    
    

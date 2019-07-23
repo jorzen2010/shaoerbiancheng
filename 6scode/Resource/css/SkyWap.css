@@ -1,0 +1,47 @@
+﻿/*自定义组件*/
+/*右上角的红色角标，表示未读消息，放在父元素里面如<span>消息<i></i></span>*/
+
+.regTitle {
+    font-weight:300;
+    margin:20px 0px 50px 0px;
+}
+
+.reginput-group {
+    border-bottom:1px solid #cccccc;
+    height:40px;
+    margin:20px 0px 20px 10px;
+    font-size:14px;
+}
+
+.regInputLable {
+    width:80px;
+    float:left;
+    line-height:25px;
+    font-weight:500;
+    text-align:left;
+    font-size:16px;
+}
+.regInput {
+    width:100%;
+    border:0px;
+    padding-left:10px;
+    font-size:18px;
+}
+
+.vipquanyi {
+    margin-top: 10px;
+}
+
+.vipquanyi_content {
+    line-height: 25px;
+    background-color: #eeeeee;
+}
+.vipquanyi_content ul {
+    margin: 0px;
+    padding: 10px;
+}
+.vipquanyi_content ul li {
+    list-style: none;
+    margin: 0px;
+    padding: 0px;
+}

@@ -244,3 +244,4 @@ D:\MyPro\2019\shaoerbiancheng\6scode\bin\PagedList.dll
 D:\MyPro\2019\shaoerbiancheng\6scode\bin\PagedList.Mvc.dll
 D:\MyPro\2019\shaoerbiancheng\6scode\bin\PagedList.xml
 D:\MyPro\2019\shaoerbiancheng\6scode\bin\PagedList.Mvc.xml
+D:\MyPro\2019\shaoerbiancheng\6scode\bin\Newtonsoft.Json.pdb
