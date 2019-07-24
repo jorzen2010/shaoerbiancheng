@@ -1,6 +1,6 @@
-﻿@model SkyEntity.VideoCourse
+﻿@model SkyEntity.CodeUser
 @{
-    ViewBag.title = "课程管理";
+    ViewBag.title = "用户管理";
 }
 @section Topcss {
 <link href="~/plugins/bootstrap-validator/css/bootstrapValidator.css" rel="stylesheet" type="text/css" />
@@ -9,13 +9,11 @@
 <link href="~/plugins/copper/css/cropper.css" rel="stylesheet" type="text/css" />
 <link href="~/plugins/copper/css/avatar.css" rel="stylesheet" type="text/css" />
 }
-
-
 <div class="content-wrapper">
     <!-- Content Header (Page header) -->
     <section class="content-header">
-        <h1>          
-            修改 @ViewBag.title
+        <h1>
+            新增 @ViewBag.title
         </h1>
     </section>
     <!-- Main content -->
@@ -26,118 +24,66 @@
                 <div class="box">
                     <div class="box-header">
                         <h3 class="box-title">
-                            修改 @ViewBag.title
+                            新增 @ViewBag.title
                         </h3>
 
                     </div>
                     <!-- /.box-header -->
-                    @using (Html.BeginForm("Edit", "VideoCourse", FormMethod.Post, new { @class = "form-horizontal", @name = "Edit", @id = "Edit" }))
+                    @using (Html.BeginForm("Create", "CodeUser", FormMethod.Post, new { @class = "form-horizontal", @name = "Create", @id = "Create" }))
                     {
-                        @Html.AntiForgeryToken()
-                         @Html.ValidationSummary(true)
-                          @Html.HiddenFor(model=>model.Id)
-                    <div class="box-body">
-                        <div class="col-md-12">
-
-                            <div class="form-group">
-                                @Html.LabelFor(model => model.Category, new { @class = "control-label col-sm-2" })
-                                <div class="col-sm-9">
-                                    @Html.DropDownListFor(model => model.Category, ViewData["CategoryList"] as IEnumerable<SelectListItem>, new { @class = "form-control" })
-                                    @Html.ValidationMessageFor(model => model.Category)
-                                </div>
-                            </div>
-
-                            <div class="form-group">
-                                @Html.LabelFor(model => model.Title, new { @class = "control-label col-md-2" })
-                                <div class="col-sm-9">
-                                    @Html.TextBoxFor(model => model.Title, new { @class = "form-control", @placeholder = "标题最多允许64个字符，32个汉字"})
-                                </div>
-                            </div>
-
-
-                            <div class="form-group">
-                                @Html.LabelFor(model => model.VideoId, new { @class = "control-label col-md-2" })
-                                <div class="col-sm-9">
-                                    @Html.TextBoxFor(model => model.VideoId, new { @class = "form-control" })
-                                </div>
-                            </div>
-
-                            <div class="form-group">
-                                @Html.LabelFor(model => model.Info, new { @class = "control-label col-md-2" })
-                                <div class="col-sm-9">
-                                    @Html.TextAreaFor(model => model.Info, new { @class = "form-control", @Value = "0" })
-
-                                </div>
-                            </div>
-
-                            <div class="form-group">
-                                @Html.LabelFor(model => model.Content, new { @class = "control-label col-md-2" })
-                                <div class="col-sm-9">
-                                    <textarea id="Content" name="Content" style="height:500px;">
-                                        @Model.Content
-                                    </textarea>
-                                    @Html.ValidationMessageFor(model => model.Content)
-                                </div>
-                            </div>
-
-                           
-
-
-                            <div class="form-group ">
-                                @Html.LabelFor(model => model.Cover, new { @class = "control-label col-md-2" })
-                                <div class="col-sm-3">
-                                    <img src="@Model.Cover" style="width:100%;border:1px solid #cccccc" id="CoverPhoto" />
-                                </div>
-                                <div class="col-sm-5">
-                                    <input type="hidden" name="Cover" id="Cover" value="@Model.Cover" />
-                                    <button class="btn btn-default" id="coverImgBtn" type="button">
-                                        选择文件
-                                    </button>
-
-                                    <p>建议尺寸700*600px，JPG、PNG格式， 图片小于5M。 </p>
-                                </div>
-                            </div>
-                          
-                            <div class="form-group">
-                                @Html.LabelFor(model => model.Tags, new { @class = "control-label col-md-2" })
-                                <div class="col-sm-9">
-                                    @Html.TextBoxFor(model => model.Tags, new { @class = "form-control", @data_role = "tagsinput" })
-                                </div>
-                            </div>
-
                        
-                            <div class="form-group">
-                                @Html.LabelFor(model => model.Author, new { @class = "control-label col-md-2" })
-                                <div class="col-sm-9">
-                                    @Html.TextBoxFor(model => model.Author, new { @class = "form-control" })
+                        @Html.AntiForgeryToken()
+                        @Html.ValidationSummary(true)
+                        <div class="box-body">
+                            <div class="col-md-12">
+
+                                <div class="form-group">
+                                    @Html.LabelFor(model => model.UserName, new { @class = "control-label col-md-2" })
+                                    <div class="col-sm-9">
+                                        @Html.TextBoxFor(model => model.UserName, new { @class = "form-control", @placeholder = "用户名" })
+                                        @Html.ValidationMessageFor(model => model.UserName)
+                                    </div>
                                 </div>
-                            </div>
 
-                            <div class="form-group">
-                                @Html.LabelFor(model => model.Paixu, new { @class = "control-label col-md-2" })
-                                <div class="col-sm-9">
-                                    @Html.TextBoxFor(model => model.Paixu, new { @class = "form-control" })
+                                <div class="form-group">
+                                    @Html.LabelFor(model => model.UserType, new { @class = "control-label col-md-2" })
+                                    <div class="col-sm-9">
+                                        @Html.TextBoxFor(model => model.UserType, new { @class = "form-control" })
+                                        @Html.ValidationMessageFor(model => model.UserName)
+                                    </div>
                                 </div>
+
+                                <div class="form-group">
+                                    @Html.LabelFor(model => model.RealName, new { @class = "control-label col-md-2" })
+                                    <div class="col-sm-9">
+                                        @Html.TextBoxFor(model => model.RealName, new { @class = "form-control" })
+                                        @Html.ValidationMessageFor(model => model.RealName)
+                                    </div>
+                                </div>
+
+                                <div class="form-group">
+                                    @Html.LabelFor(model => model.Password, new { @class = "control-label col-md-2" })
+                                    <div class="col-sm-9">
+                                        @Html.TextBoxFor(model => model.Password, new { @class = "form-control" })
+
+                                    </div>
+                                </div>
+
+                                @Html.HiddenFor(model => model.CreateTime, new { @Value = DateTime.Now })
+
                             </div>
-
-                           
-
-                            @Html.HiddenFor(model => model.CreateTime, new{ @Value=DateTime.Now})
-
 
 
                         </div>
 
-
-                    </div>
-                    
                     <!-- /.box-body -->
-                    <div class="box-footer clearfix">
-                        
-                        <button type="submit" class="btn btn-primary pull-right">保存并发布</button>
-                    </div>
-               
-                    } </div>
+                        <div class="box-footer clearfix">
+                            
+                            <button type="submit" class="btn btn-primary pull-right">保存并发布</button>
+                        </div>
+
+                    }
+                </div>
                 <!-- /.box -->
             </div>
         </div>
@@ -145,6 +91,7 @@
     </section>
     <!-- /.content -->
 </div>
+
 
 <div class="modal fade" id="avatar-modal" aria-hidden="true" aria-labelledby="avatar-modal-label" role="dialog" tabindex="-1">
     <div class="modal-dialog modal-lg">
@@ -155,7 +102,7 @@
                     <div class="col-md-12">
                         <div class="img-container" style="width:870px;height:500px;">
 
-                            <img id="image" src="@Model.Cover" alt="Picture">
+                            <img id="image" src="/Resource/img/nophoto.png" alt="Picture">
                             @*<input id="imageaspectRatio" type="hidden" />*@
                         </div>
 
@@ -252,9 +199,9 @@
     <script type="text/javascript" src="~/plugins/bootbox.min.js"></script>
     <script type="text/javascript" src="~/plugins/iCheck/icheck.js"></script>
     <script type="text/javascript" src="~/plugins/bootstrap-validator/js/bootstrapValidator.js"></script>
-    <script type="text/javascript" src="~/plugins/ueditor/ueditor.config.js" charset="gbk"></script>
-    <script type="text/javascript" src="~/plugins/ueditor/ueditor.all.min.js" charset="gbk"> </script>
-    <script type="text/javascript" src="~/plugins/ueditor/lang/zh-cn/zh-cn.js" charset="gbk"></script>
+    <script type="text/javascript" charset="gbk" src="~/plugins/ueditor/ueditor.config.js"></script>
+    <script type="text/javascript" charset="gbk" src="~/plugins/ueditor/ueditor.all.min.js"> </script>
+    <script type="text/javascript" charset="gbk" src="~/plugins/ueditor/lang/zh-cn/zh-cn.js"></script>
     <script type="text/javascript" src="~/plugins/bootstrap-tagsinput/js/bootstrap-tagsinput.min.js"></script>
     <script type="text/javascript" src="~/plugins/bootstrap-fileinput/js/fileinput.min.js"></script>
     <script type="text/javascript" src="~/plugins/bootstrap-fileinput/js/locales/zh.js"></script>
@@ -265,7 +212,7 @@
     <script type="text/javascript" src="~/Resource/js/SkyInit.js"></script>
     <script type="text/javascript">
         var ue = UE.getEditor('Content');
-        //  $('#imageaspectRatio').val('1.33333');
+      //  $('#imageaspectRatio').val('1.33333');
         $('#coverImgBtn').click(function () {
             $('#avatar-modal').modal('show');
             //这句的意思是将container的宽高值去掉，保证自适应效果。有个小bug是第一次使用的时候如果浏览器过小可能造成显示不完全。
@@ -275,4 +222,3 @@
         });
     </script>
 }
-

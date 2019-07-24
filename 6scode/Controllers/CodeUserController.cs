@@ -12,7 +12,7 @@ using SkyCommon;
 
 namespace _6scode.Controllers
 {
-    public class VideoCourseController : AdminBaseController
+    public class CodeUserController : AdminBaseController
     {
         private UnitOfWork unitOfWork = new UnitOfWork();
         //
@@ -21,7 +21,7 @@ namespace _6scode.Controllers
         {
 
             Pager pager = new Pager();
-            pager.table = "VideoCourse";
+            pager.table = "CodeUser";
             pager.strwhere = "1=1";
             pager.PageSize = 2;
             pager.PageNo = page ?? 1;
@@ -29,8 +29,8 @@ namespace _6scode.Controllers
             pager.FiledOrder = "Id desc";
 
             pager = CommonDal.GetPager(pager);
-            IList<VideoCourse> dataList = DataConvertHelper<VideoCourse>.ConvertToModel(pager.EntityDataTable);
-            var PageList = new StaticPagedList<VideoCourse>(dataList, pager.PageNo, pager.PageSize, pager.Amount);
+            IList<CodeUser> dataList = DataConvertHelper<CodeUser>.ConvertToModel(pager.EntityDataTable);
+            var PageList = new StaticPagedList<CodeUser>(dataList, pager.PageNo, pager.PageSize, pager.Amount);
             return View(PageList);
         }
 
@@ -38,77 +38,74 @@ namespace _6scode.Controllers
         {
 
             Pager pager = new Pager();
-            pager.table = "VideoCourse";
+            pager.table = "CodeUser";
             pager.strwhere = "Category=" + cid;
             pager.PageSize = 2;
             pager.PageNo = page ?? 1;
             pager.FieldKey = "Id";
             pager.FiledOrder = "Paixu asc";
             pager = CommonDal.GetPager(pager);
-            IList<VideoCourse> dataList = DataConvertHelper<VideoCourse>.ConvertToModel(pager.EntityDataTable);
-            var PageList = new StaticPagedList<VideoCourse>(dataList, pager.PageNo, pager.PageSize, pager.Amount);
+            IList<CodeUser> dataList = DataConvertHelper<CodeUser>.ConvertToModel(pager.EntityDataTable);
+            var PageList = new StaticPagedList<CodeUser>(dataList, pager.PageNo, pager.PageSize, pager.Amount);
             return View(PageList);
 
         }
 
         public ActionResult Create()
         {
-            CategoryService cate = new CategoryService();
-            ViewData["Categorylist"] = cate.GetCategorySelectList(5);
-
             return View();
         }
         [HttpPost]
         [ValidateAntiForgeryToken]
         [ValidateInput(false)]
-        public ActionResult Create(VideoCourse videoCourse)
+        public ActionResult Create(CodeUser codeUser)
         {
             if (ModelState.IsValid)
             {
-                unitOfWork.videoCoursesRepository.Insert(videoCourse);
+                unitOfWork.codeUsersRepository.Insert(codeUser);
                 unitOfWork.Save();
-                return RedirectToAction("Index", "VideoCourse");
+                return RedirectToAction("Index", "CodeUser");
             }
 
-            return View(videoCourse);
+            return View(codeUser);
         }
 
         public ActionResult Edit(int id)
         {
             CategoryService cate = new CategoryService();
             ViewData["Categorylist"] = cate.GetCategorySelectList(5);
-            VideoCourse videoCourse = unitOfWork.videoCoursesRepository.GetByID(id);
+            CodeUser codeUser = unitOfWork.codeUsersRepository.GetByID(id);
 
-            if (videoCourse == null)
+            if (codeUser == null)
             {
                 return HttpNotFound();
             }
-            return View(videoCourse);
+            return View(codeUser);
         }
         [HttpPost]
         [ValidateAntiForgeryToken]
         [ValidateInput(false)]
-        public ActionResult Edit(VideoCourse videoCourse)
+        public ActionResult Edit(CodeUser codeUser)
         {
             if (ModelState.IsValid)
             {
-                unitOfWork.videoCoursesRepository.Update(videoCourse);
+                unitOfWork.codeUsersRepository.Update(codeUser);
                 unitOfWork.Save();
-                return RedirectToAction("Index", "VideoCourse");
+                return RedirectToAction("Index", "CodeUser");
             }
-            return View(videoCourse);
+            return View(codeUser);
         }
 
         public ActionResult Content(int id)
         {
 
-            VideoCourse videoCourse = unitOfWork.videoCoursesRepository.GetByID(id);
+            CodeUser codeUser = unitOfWork.codeUsersRepository.GetByID(id);
 
-            if (videoCourse == null)
+            if (codeUser == null)
             {
                 return HttpNotFound();
             }
-            return View(videoCourse);
+            return View(codeUser);
         }
 
         //彻底删除
@@ -125,7 +122,7 @@ namespace _6scode.Controllers
             else
             {
 
-                unitOfWork.videoCoursesRepository.Delete(id);
+                unitOfWork.codeUsersRepository.Delete(id);
                 unitOfWork.Save();
 
                 msg.MessageStatus = "true";

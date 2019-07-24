@@ -73,6 +73,21 @@ namespace SkyDal
              }
          }
 
+         private GenericRepository<CodeUser> CodeUsersRepository;
+
+         public GenericRepository<CodeUser> codeUsersRepository
+         {
+             get
+             {
+
+                 if (this.CodeUsersRepository == null)
+                 {
+                     this.CodeUsersRepository = new GenericRepository<CodeUser>(context);
+                 }
+                 return CodeUsersRepository;
+             }
+         }
+
         
    
    

@@ -18,8 +18,22 @@
         <!-- Optionally, you can add icons to the links -->
         <li><a href="@Url.Action("Index","Home")"><i class="fa fa-dashboard"></i> <span>仪表盘</span></a></li>
         <li><a href="@Url.Action("About","Home")"><i class="fa fa-table"></i> <span>课程中心</span></a></li>
+        <li><a href="@Url.Action("Index","VideoCourse")"><i class="fa fa-table"></i> <span>课程管理</span></a></li>
+        <li><a href="@Url.Action("Index","CodeUser")"><i class="fa fa-table"></i> <span>用户管理</span></a></li>
         <li><a href="@Url.Action("Contact","Home")"><i class="fa fa-cog"></i> <span>修改密码</span></a></li>
-        
+        <li class="treeview">
+            <a href="#">
+                <i class="fa fa-cog"></i> <span>系统设置</span>
+                <span class="pull-right-container">
+                    <i class="fa fa-cog pull-right"></i>
+                </span>
+            </a>
+            <ul class="treeview-menu">
+                <li><a href="@Url.Action("Index","Category")">分类设置</a></li>
+                <li><a href="@Url.Action("Index","AdminSysUser")">系统用户管理</a></li>
+                <li><a href="@Url.Action("Index","AdminSetting")">系统设置</a></li>
+            </ul>
+        </li>
     </ul>
     <!-- /.sidebar-menu -->
 </section>

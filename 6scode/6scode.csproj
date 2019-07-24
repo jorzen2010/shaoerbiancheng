@@ -173,6 +173,7 @@
     <Compile Include="Controllers\CourseListController.cs" />
     <Compile Include="Controllers\FileController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
+    <Compile Include="Controllers\CodeUserController.cs" />
     <Compile Include="Controllers\VideoCourseController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
@@ -1677,7 +1678,6 @@
     <Content Include="Views\Account\Manage.cshtml" />
     <Content Include="Views\Account\Register.cshtml" />
     <Content Include="Views\Shared\_LoginPartial.cshtml" />
-    <Content Include="Views\Shared\_Layout - 复制.cshtml" />
     <Content Include="Views\Shared\_MenuPartial.cshtml" />
     <Content Include="Views\Shared\_TopPartial.cshtml" />
     <Content Include="Views\Home\CourseList.cshtml" />
@@ -1691,6 +1691,12 @@
     <Content Include="Views\VideoCourse\Edit.cshtml" />
     <Content Include="Views\VideoCourse\Index.cshtml" />
     <Content Include="Views\VideoCourse\CourseList.cshtml" />
+    <Content Include="Views\VideoCourse\Content.cshtml" />
+    <Content Include="Views\Shared\_LayoutAdmin.cshtml" />
+    <Content Include="Views\CodeUser\Create.cshtml" />
+    <Content Include="Views\CodeUser\Edit.cshtml" />
+    <Content Include="Views\CodeUser\Index.cshtml" />
+    <Content Include="Views\Shared\_MenuPartial2.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

@@ -135,6 +135,34 @@ namespace SkyDal
                     CategoryStatus=true,
                     CategorySort=0,
                 },
+                new Category{
+                    CategoryName="视频课程",
+                    CategoryInfo="视频课程",
+                    CategoryParentID=1,
+                    CategoryStatus=true,
+                    CategorySort=0,
+                },
+                new Category{
+                    CategoryName="初级课程",
+                    CategoryInfo="初级课程",
+                    CategoryParentID=5,
+                    CategoryStatus=true,
+                    CategorySort=0,
+                },
+                new Category{
+                    CategoryName="精品课程",
+                    CategoryInfo="精品课程",
+                    CategoryParentID=5,
+                    CategoryStatus=true,
+                    CategorySort=0,
+                },
+                new Category{
+                    CategoryName="高级课程",
+                    CategoryInfo="高级课程",
+                    CategoryParentID=5,
+                    CategoryStatus=true,
+                    CategorySort=0,
+                },
             };
             CategoryList.ForEach(j => context.Categorys.Add(j));
             context.SaveChanges();
