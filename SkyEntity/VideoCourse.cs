@@ -44,6 +44,7 @@ namespace SkyEntity
         
 
         [Display(Name = "视频ID")]
+        [Required(ErrorMessage = "视频ID不能可为空")]
         public string VideoId { get; set; }
 
         [Display(Name = "排序ID")]

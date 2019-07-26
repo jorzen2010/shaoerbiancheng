@@ -83,7 +83,7 @@ namespace _6scode.Controllers
                 server.EmailPassword = setting.EmailPassword;
                 server.SMTPClient = setting.EmailHost;
                 EmailEntity mailEntity = new EmailEntity();
-                mailEntity.DisplayName = "星星家庭训练系统管理员";
+                mailEntity.DisplayName = "6SCoder";
                 mailEntity.MailContent = EmailContent;
                 mailEntity.ToMail = sysemail;
                 mailEntity.MailTitle = "重置密码邮件";

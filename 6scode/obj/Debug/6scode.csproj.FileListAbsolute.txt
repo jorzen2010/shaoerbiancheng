@@ -177,6 +177,8 @@ D:\MyPro\2019\shaoerbiancheng\6scode\bin\Microsoft.Owin.Security.Twitter.dll
 D:\MyPro\2019\shaoerbiancheng\6scode\bin\Microsoft.Web.Infrastructure.dll
 D:\MyPro\2019\shaoerbiancheng\6scode\bin\Newtonsoft.Json.dll
 D:\MyPro\2019\shaoerbiancheng\6scode\bin\Owin.dll
+D:\MyPro\2019\shaoerbiancheng\6scode\bin\PagedList.dll
+D:\MyPro\2019\shaoerbiancheng\6scode\bin\PagedList.Mvc.dll
 D:\MyPro\2019\shaoerbiancheng\6scode\bin\SkyCommon.dll
 D:\MyPro\2019\shaoerbiancheng\6scode\bin\SkyDal.dll
 D:\MyPro\2019\shaoerbiancheng\6scode\bin\SkyEntity.dll
@@ -195,6 +197,8 @@ D:\MyPro\2019\shaoerbiancheng\6scode\bin\SkyCommon.pdb
 D:\MyPro\2019\shaoerbiancheng\6scode\bin\SkyDal.pdb
 D:\MyPro\2019\shaoerbiancheng\6scode\bin\SkyEntity.pdb
 D:\MyPro\2019\shaoerbiancheng\6scode\bin\SkyService.pdb
+D:\MyPro\2019\shaoerbiancheng\6scode\bin\PagedList.xml
+D:\MyPro\2019\shaoerbiancheng\6scode\bin\PagedList.Mvc.xml
 D:\MyPro\2019\shaoerbiancheng\6scode\bin\System.Web.Helpers.xml
 D:\MyPro\2019\shaoerbiancheng\6scode\bin\System.Web.Mvc.xml
 D:\MyPro\2019\shaoerbiancheng\6scode\bin\System.Web.Optimization.xml
@@ -202,6 +206,7 @@ D:\MyPro\2019\shaoerbiancheng\6scode\bin\System.Web.Razor.xml
 D:\MyPro\2019\shaoerbiancheng\6scode\bin\System.Web.WebPages.xml
 D:\MyPro\2019\shaoerbiancheng\6scode\bin\System.Web.WebPages.Deployment.xml
 D:\MyPro\2019\shaoerbiancheng\6scode\bin\System.Web.WebPages.Razor.xml
+D:\MyPro\2019\shaoerbiancheng\6scode\bin\Newtonsoft.Json.pdb
 D:\MyPro\2019\shaoerbiancheng\6scode\bin\Newtonsoft.Json.xml
 D:\MyPro\2019\shaoerbiancheng\6scode\bin\Antlr3.Runtime.pdb
 D:\MyPro\2019\shaoerbiancheng\6scode\bin\EntityFramework.xml
@@ -240,8 +245,3 @@ D:\MyPro\2019\shaoerbiancheng\6scode\bin\zh-Hans\Microsoft.Owin.Security.Microso
 D:\MyPro\2019\shaoerbiancheng\6scode\obj\Debug\6scode.csprojResolveAssemblyReference.cache
 D:\MyPro\2019\shaoerbiancheng\6scode\obj\Debug\6scode.dll
 D:\MyPro\2019\shaoerbiancheng\6scode\obj\Debug\6scode.pdb
-D:\MyPro\2019\shaoerbiancheng\6scode\bin\PagedList.dll
-D:\MyPro\2019\shaoerbiancheng\6scode\bin\PagedList.Mvc.dll
-D:\MyPro\2019\shaoerbiancheng\6scode\bin\PagedList.xml
-D:\MyPro\2019\shaoerbiancheng\6scode\bin\PagedList.Mvc.xml
-D:\MyPro\2019\shaoerbiancheng\6scode\bin\Newtonsoft.Json.pdb

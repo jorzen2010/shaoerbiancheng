@@ -19,7 +19,6 @@ namespace _6scode.Controllers
         // GET: /JkSucai/
         public ActionResult Index(int? page)
         {
-
             Pager pager = new Pager();
             pager.table = "CodeUser";
             pager.strwhere = "1=1";
@@ -34,22 +33,7 @@ namespace _6scode.Controllers
             return View(PageList);
         }
 
-        public ActionResult CourseList(int? page,int cid)
-        {
-
-            Pager pager = new Pager();
-            pager.table = "CodeUser";
-            pager.strwhere = "Category=" + cid;
-            pager.PageSize = 2;
-            pager.PageNo = page ?? 1;
-            pager.FieldKey = "Id";
-            pager.FiledOrder = "Paixu asc";
-            pager = CommonDal.GetPager(pager);
-            IList<CodeUser> dataList = DataConvertHelper<CodeUser>.ConvertToModel(pager.EntityDataTable);
-            var PageList = new StaticPagedList<CodeUser>(dataList, pager.PageNo, pager.PageSize, pager.Amount);
-            return View(PageList);
-
-        }
+       
 
         public ActionResult Create()
         {
@@ -62,6 +46,7 @@ namespace _6scode.Controllers
         {
             if (ModelState.IsValid)
             {
+                codeUser.Password = CommonTools.ToMd5(codeUser.Password);
                 unitOfWork.codeUsersRepository.Insert(codeUser);
                 unitOfWork.Save();
                 return RedirectToAction("Index", "CodeUser");
@@ -87,6 +72,7 @@ namespace _6scode.Controllers
         [ValidateInput(false)]
         public ActionResult Edit(CodeUser codeUser)
         {
+
             if (ModelState.IsValid)
             {
                 unitOfWork.codeUsersRepository.Update(codeUser);
@@ -96,17 +82,57 @@ namespace _6scode.Controllers
             return View(codeUser);
         }
 
-        public ActionResult Content(int id)
+        [HttpPost]
+        [ValidateAntiForgeryToken]
+        public JsonResult UpdateStatus(int? id, bool status)
         {
-
-            CodeUser codeUser = unitOfWork.codeUsersRepository.GetByID(id);
-
-            if (codeUser == null)
+            Message msg = new Message();
+            if (id == null)
             {
-                return HttpNotFound();
+                msg.MessageStatus = "false";
+                msg.MessageInfo = "找不到ID";
             }
-            return View(codeUser);
+            CodeUser codeUser = unitOfWork.codeUsersRepository.GetByID(id);
+            codeUser.UserStatus = status;
+            if (ModelState.IsValid)
+            {
+
+                unitOfWork.codeUsersRepository.Update(codeUser);
+                unitOfWork.Save();
+                msg.MessageStatus = "true";
+                msg.MessageInfo = "已经更改为" + codeUser.UserStatus.ToString();
+            }
+            return Json(msg, JsonRequestBehavior.AllowGet);
         }
+
+
+        [HttpPost]
+        [ValidateAntiForgeryToken]
+        public JsonResult ResetPassword(int id)
+        {
+            Message msg = new Message();
+
+            CodeUser coder = unitOfWork.codeUsersRepository.GetByID(id);
+            string password = CommonTools.GenerateRandomNumber(8);
+            string confirmpassword = CommonTools.ToMd5(password);
+            coder.Password = confirmpassword;
+
+
+
+
+            if (ModelState.IsValid)
+            {
+
+                unitOfWork.codeUsersRepository.Update(coder);
+                unitOfWork.Save();
+                string EmailContent = "密码已经被重置为" + password.ToString() +",请注意查收！";
+
+                msg.MessageStatus = "true";
+                msg.MessageInfo = EmailContent;
+            }
+            return Json(msg, JsonRequestBehavior.AllowGet);
+        }
+
 
         //彻底删除
         [HttpPost]

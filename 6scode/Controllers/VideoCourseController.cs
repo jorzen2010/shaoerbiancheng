@@ -3,12 +3,14 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Web;
 using System.Web.Mvc;
+using System.Globalization;
 using PagedList;
 using PagedList.Mvc;
 using SkyDal;
 using SkyEntity;
 using SkyService;
 using SkyCommon;
+using AliyunVideo;
 
 namespace _6scode.Controllers
 {
@@ -63,6 +65,8 @@ namespace _6scode.Controllers
         [ValidateInput(false)]
         public ActionResult Create(VideoCourse videoCourse)
         {
+            CategoryService cate = new CategoryService();
+            ViewData["Categorylist"] = cate.GetCategorySelectList(5);
             if (ModelState.IsValid)
             {
                 unitOfWork.videoCoursesRepository.Insert(videoCourse);
@@ -101,14 +105,21 @@ namespace _6scode.Controllers
 
         public ActionResult Content(int id)
         {
+            VideoCourse video = unitOfWork.videoCoursesRepository.GetByID(id);
+            string ApiUrl = AliyunCommonParaConfig.ApiUrl;
+            // 注意这里需要使用UTC时间，比北京时间少8小时。
+            string Timestamp = DateTime.Now.ToUniversalTime().ToString("yyyy-MM-ddTHH:mm:ssZ", DateTimeFormatInfo.InvariantInfo);
+            string Action = "GetVideoPlayAuth";
+            string SignatureNonce = CommonTools.EncryptToSHA1(CommonTools.GenerateRandomNumber(8));
 
-            VideoCourse videoCourse = unitOfWork.videoCoursesRepository.GetByID(id);
+            //  string VideoId = "6ccf973fe06741e49ab849d4cec017e0";
 
-            if (videoCourse == null)
-            {
-                return HttpNotFound();
-            }
-            return View(videoCourse);
+            string VideoId = video.VideoId;
+            ViewBag.VideoId = VideoId;
+
+            ViewBag.PlayAuth = AliyunVideoServices.GetVideoInfo(ApiUrl, VideoId, Timestamp, Action, SignatureNonce).PlayAuth;
+
+            return View();
         }
 
         //彻底删除

@@ -160,11 +160,18 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="AliyunVideo\business\AliyunVideoServices.cs" />
+    <Compile Include="AliyunVideo\Model\AliyunCommonParaConfig.cs" />
+    <Compile Include="AliyunVideo\Model\CommonParam.cs" />
+    <Compile Include="AliyunVideo\Model\VideoModel.cs" />
     <Compile Include="App_Start\BundleConfig.cs" />
     <Compile Include="App_Start\FilterConfig.cs" />
     <Compile Include="App_Start\RouteConfig.cs" />
     <Compile Include="App_Start\Startup.Auth.cs" />
     <Compile Include="Controllers\AccountController.cs" />
+    <Compile Include="Controllers\HomeBaseController.cs" />
+    <Compile Include="Controllers\AdminController.cs" />
+    <Compile Include="Controllers\UserAccountController.cs" />
     <Compile Include="Controllers\AdminAccountController.cs" />
     <Compile Include="Controllers\AdminBaseController.cs" />
     <Compile Include="Controllers\AdminSettingController.cs" />
@@ -1641,6 +1648,7 @@
     <Content Include="plugins\ueditor\third-party\video-js\font\vjs.eot" />
     <Content Include="plugins\ueditor\third-party\video-js\font\vjs.ttf" />
     <Content Include="plugins\ueditor\third-party\video-js\font\vjs.woff" />
+    <None Include="Properties\PublishProfiles\6scode.pubxml" />
     <None Include="Scripts\jquery-1.10.2.intellisense.js" />
     <Content Include="Scripts\jquery-1.10.2.js" />
     <Content Include="Scripts\jquery-1.10.2.min.js" />
@@ -1664,8 +1672,8 @@
     <Content Include="Views\_ViewStart.cshtml" />
     <Content Include="Views\Shared\Error.cshtml" />
     <Content Include="Views\Shared\_Layout.cshtml" />
-    <Content Include="Views\Home\About.cshtml" />
-    <Content Include="Views\Home\Contact.cshtml" />
+    <Content Include="Views\Home\CourseCenter.cshtml" />
+    <Content Include="Views\Home\SetPassWord.cshtml" />
     <Content Include="Views\Home\Index.cshtml" />
     <Content Include="Scripts\jquery-1.10.2.min.map" />
     <Content Include="Views\Account\_ChangePasswordPartial.cshtml" />
@@ -1680,9 +1688,7 @@
     <Content Include="Views\Shared\_LoginPartial.cshtml" />
     <Content Include="Views\Shared\_MenuPartial.cshtml" />
     <Content Include="Views\Shared\_TopPartial.cshtml" />
-    <Content Include="Views\Home\CourseList.cshtml" />
     <Content Include="Views\Home\Content.cshtml" />
-    <Content Include="Views\Home\Login.cshtml" />
     <Content Include="Views\Category\Index.cshtml" />
     <Content Include="Views\AdminSetting\Index.cshtml" />
     <Content Include="Views\AdminSysUser\Index.cshtml" />
@@ -1696,12 +1702,15 @@
     <Content Include="Views\CodeUser\Create.cshtml" />
     <Content Include="Views\CodeUser\Edit.cshtml" />
     <Content Include="Views\CodeUser\Index.cshtml" />
-    <Content Include="Views\Shared\_MenuPartial2.cshtml" />
+    <Content Include="Views\Shared\_AdminMenuPartial.cshtml" />
+    <Content Include="Views\UserAccount\Login.cshtml" />
+    <Content Include="Views\Shared\CourseList.cshtml" />
+    <Content Include="Views\Home\CourseList.cshtml" />
+    <Content Include="Views\Admin\Index.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
     <Folder Include="plugins\sweetalert2\" />
-    <Folder Include="Views\CourseList\" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="fonts\glyphicons-halflings-regular.woff" />

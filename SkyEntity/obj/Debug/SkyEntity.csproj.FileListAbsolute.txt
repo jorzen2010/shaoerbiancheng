@@ -4,6 +4,5 @@ D:\mypro\shaoerbiancheng\SkyEntity\obj\Debug\SkyEntity.dll
 D:\mypro\shaoerbiancheng\SkyEntity\obj\Debug\SkyEntity.pdb
 D:\MyPro\2019\shaoerbiancheng\SkyEntity\bin\Debug\SkyEntity.dll
 D:\MyPro\2019\shaoerbiancheng\SkyEntity\bin\Debug\SkyEntity.pdb
-D:\MyPro\2019\shaoerbiancheng\SkyEntity\obj\Debug\SkyEntity.csprojResolveAssemblyReference.cache
 D:\MyPro\2019\shaoerbiancheng\SkyEntity\obj\Debug\SkyEntity.dll
 D:\MyPro\2019\shaoerbiancheng\SkyEntity\obj\Debug\SkyEntity.pdb
