@@ -119,7 +119,7 @@ namespace _6scode.Controllers
 
             ViewBag.PlayAuth = AliyunVideoServices.GetVideoInfo(ApiUrl, VideoId, Timestamp, Action, SignatureNonce).PlayAuth;
 
-            return View();
+            return View(video);
         }
 
         //彻底删除
