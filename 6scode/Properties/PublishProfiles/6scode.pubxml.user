@@ -10,7 +10,7 @@
   </PropertyGroup>
   <ItemGroup>
     <File Include="bin/6scode.dll">
-      <publishTime>07/29/2019 14:28:33</publishTime>
+      <publishTime>08/10/2019 15:48:01</publishTime>
     </File>
     <File Include="bin/Antlr3.Runtime.dll">
       <publishTime>07/22/2019 13:50:41</publishTime>
@@ -4597,7 +4597,7 @@
       <publishTime>07/26/2019 11:01:42</publishTime>
     </File>
     <File Include="Views/AdminAccount/Login.cshtml">
-      <publishTime>07/26/2019 15:03:20</publishTime>
+      <publishTime>07/30/2019 09:31:29</publishTime>
     </File>
     <File Include="Views/AdminSetting/Index.cshtml">
       <publishTime>07/26/2019 11:02:17</publishTime>
@@ -4618,7 +4618,7 @@
       <publishTime>07/26/2019 14:11:10</publishTime>
     </File>
     <File Include="Views/Home/Content.cshtml">
-      <publishTime>07/29/2019 14:24:14</publishTime>
+      <publishTime>08/01/2019 09:42:18</publishTime>
     </File>
     <File Include="Views/Home/CourseCenter.cshtml">
       <publishTime>07/26/2019 09:18:46</publishTime>
@@ -4657,10 +4657,10 @@
       <publishTime>07/22/2019 13:50:40</publishTime>
     </File>
     <File Include="Views/UserAccount/Login.cshtml">
-      <publishTime>07/29/2019 13:57:50</publishTime>
+      <publishTime>07/30/2019 09:30:15</publishTime>
     </File>
     <File Include="Views/VideoCourse/Content.cshtml">
-      <publishTime>07/29/2019 14:23:13</publishTime>
+      <publishTime>08/01/2019 09:44:24</publishTime>
     </File>
     <File Include="Views/VideoCourse/CourseList.cshtml">
       <publishTime>07/26/2019 11:03:20</publishTime>

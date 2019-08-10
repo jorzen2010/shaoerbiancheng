@@ -61,7 +61,7 @@ namespace _6scode.Controllers
 
             var codeUsers = from s in db.CodeUsers
                            orderby s.Id ascending
-                           where (s.UserName == username && (s.Password == password))
+                           where (s.UserName == username && s.Password == password)
                            select s;
             if (codeUsers.Count() > 0)
             {
