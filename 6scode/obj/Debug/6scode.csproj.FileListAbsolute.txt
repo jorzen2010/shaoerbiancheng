@@ -245,3 +245,8 @@ D:\MyPro\2019\shaoerbiancheng\6scode\bin\zh-Hans\Microsoft.Owin.Security.Microso
 D:\MyPro\2019\shaoerbiancheng\6scode\obj\Debug\6scode.csprojResolveAssemblyReference.cache
 D:\MyPro\2019\shaoerbiancheng\6scode\obj\Debug\6scode.dll
 D:\MyPro\2019\shaoerbiancheng\6scode\obj\Debug\6scode.pdb
+D:\mypro\shaoerbiancheng\6scode\bin\PagedList.dll
+D:\mypro\shaoerbiancheng\6scode\bin\PagedList.Mvc.dll
+D:\mypro\shaoerbiancheng\6scode\bin\PagedList.xml
+D:\mypro\shaoerbiancheng\6scode\bin\PagedList.Mvc.xml
+D:\mypro\shaoerbiancheng\6scode\bin\Newtonsoft.Json.pdb

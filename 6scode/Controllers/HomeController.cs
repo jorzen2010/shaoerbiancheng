@@ -14,14 +14,14 @@ using AliyunVideo;
 
 namespace _6scode.Controllers
 {
-    public class HomeController : HomeBaseController
+    public class HomeController :HomeBaseController
     {
         private UnitOfWork unitOfWork = new UnitOfWork();
 
         public ActionResult Index()
         {           
-                //return View();
-            return RedirectToAction("CourseCenter");
+                return View();
+          //  return RedirectToAction("CourseCenter");
            
         }
 

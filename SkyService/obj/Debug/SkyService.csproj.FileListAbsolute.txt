@@ -26,3 +26,7 @@ D:\MyPro\2019\shaoerbiancheng\SkyService\bin\Debug\zh-Hans\EntityFramework.resou
 D:\MyPro\2019\shaoerbiancheng\SkyService\obj\Debug\SkyService.csprojResolveAssemblyReference.cache
 D:\MyPro\2019\shaoerbiancheng\SkyService\obj\Debug\SkyService.dll
 D:\MyPro\2019\shaoerbiancheng\SkyService\obj\Debug\SkyService.pdb
+D:\mypro\shaoerbiancheng\SkyService\bin\Debug\SkyCommon.dll
+D:\mypro\shaoerbiancheng\SkyService\bin\Debug\Microsoft.ApplicationBlocks.Data.dll
+D:\mypro\shaoerbiancheng\SkyService\bin\Debug\ChnCharInfo.dll
+D:\mypro\shaoerbiancheng\SkyService\bin\Debug\SkyCommon.pdb

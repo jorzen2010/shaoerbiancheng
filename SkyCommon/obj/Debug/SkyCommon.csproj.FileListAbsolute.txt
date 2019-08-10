@@ -33,3 +33,10 @@ D:\MyPro\2019\shaoerbiancheng\SkyCommon\bin\Debug\Microsoft.ApplicationBlocks.Da
 D:\MyPro\2019\shaoerbiancheng\SkyCommon\obj\Debug\SkyCommon.csprojResolveAssemblyReference.cache
 D:\MyPro\2019\shaoerbiancheng\SkyCommon\obj\Debug\SkyCommon.dll
 D:\MyPro\2019\shaoerbiancheng\SkyCommon\obj\Debug\SkyCommon.pdb
+D:\mypro\shaoerbiancheng\SkyCommon\bin\Debug\SkyCommon.dll
+D:\mypro\shaoerbiancheng\SkyCommon\bin\Debug\SkyCommon.pdb
+D:\mypro\shaoerbiancheng\SkyCommon\bin\Debug\ChnCharInfo.dll
+D:\mypro\shaoerbiancheng\SkyCommon\bin\Debug\Microsoft.ApplicationBlocks.Data.dll
+D:\mypro\shaoerbiancheng\SkyCommon\obj\Debug\SkyCommon.csprojResolveAssemblyReference.cache
+D:\mypro\shaoerbiancheng\SkyCommon\obj\Debug\SkyCommon.dll
+D:\mypro\shaoerbiancheng\SkyCommon\obj\Debug\SkyCommon.pdb

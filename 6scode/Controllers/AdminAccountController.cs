@@ -86,6 +86,7 @@ namespace _6scode.Controllers
                     }
                     else
                     {
+                        System.Web.HttpContext.Current.Session["uname"] = null;
                         ViewBag.msg = "没有权限";
                         return Redirect(reurnUrl);
                     }
@@ -94,6 +95,7 @@ namespace _6scode.Controllers
 
                 else
                 {
+                    System.Web.HttpContext.Current.Session["uname"] = null;
                     ViewBag.msg = "此已经被禁用，不允许登陆";
                     return View();
 
@@ -102,6 +104,7 @@ namespace _6scode.Controllers
             }
             else
             {
+                System.Web.HttpContext.Current.Session["uname"] = null;
                 ViewBag.msg = "用户名或密码错误了";
                 return View();
 
