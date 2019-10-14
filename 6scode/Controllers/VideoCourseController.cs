@@ -25,7 +25,7 @@ namespace _6scode.Controllers
             Pager pager = new Pager();
             pager.table = "VideoCourse";
             pager.strwhere = "1=1";
-            pager.PageSize = 2;
+            pager.PageSize = 20;
             pager.PageNo = page ?? 1;
             pager.FieldKey = "Id";
             pager.FiledOrder = "Id desc";
@@ -42,7 +42,7 @@ namespace _6scode.Controllers
             Pager pager = new Pager();
             pager.table = "VideoCourse";
             pager.strwhere = "Category=" + cid;
-            pager.PageSize = 2;
+            pager.PageSize = 20;
             pager.PageNo = page ?? 1;
             pager.FieldKey = "Id";
             pager.FiledOrder = "Paixu asc";
