@@ -12,7 +12,7 @@ namespace AliyunVideo
         public const string Format = "JSON";
         public const string Version = "2017-03-21";
         public const string AccessKeyId = "LTAIHmoHhNfb1Euj";
-        public const string AccessKeySecret = "afCSAjYmNuVcPLTLuwxCtwvu4VvYrr";
+        public const string AccessKeySecret = "asfsCsSAjYsmNuVcsPLTLuwxCtswvu4VsvYrr";
       
         public const string SignatureVersion = "1.0";
 
